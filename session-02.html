@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-Cart</title>
+
+    <style>
+        button {
+            width: 100%;
+            height: 30px;
+            margin: 10px 20px 10px 20px;
+            background-color: rgb(246, 164, 40);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="one" onclick="
+            alert(`Cart Quantity : ${x}`);
+        ">
+        Show Quantity
+    </button>
+
+    <button class="two" onclick="
+            x = x + 1;
+            alert(`Added 1 item . Cart Quantity : ${x}`);
+        ">
+        Add to Cart
+    </button>
+
+    <button class="three" onclick="
+            x = x + 2;
+            alert(`Added 2 items . Cart Quantity : ${x}`);
+        ">
+        +2
+    </button>
+
+    <button class="four" onclick="
+            x = x + 3;
+            alert(`Added 3 items . Cart Quantity : ${x}`);
+        ">
+        +3
+    </button>
+
+    <button class="five" onclick="
+            x = 0;
+            alert(`All right , your cart was reset . Cart Quantity : ${x}`);
+        ">
+        Reset Cart
+    </button>
+
+    <script>
+        let x = 0
+    </script>
+</body>
+</html>
